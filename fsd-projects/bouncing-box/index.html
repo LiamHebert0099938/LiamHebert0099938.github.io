@@ -55,13 +55,13 @@
         box.on("click", handleBoxClick);
 
         // moves the Box to a new position on the screen along the X-Axis
-        function moveBoxTo(newPositionX) {
-          box.css("left", newPositionX);
+        function moveBoxTo(positionX) {
+          box.css("left", positionX);
         }
 
         // changes the text displayed on the Box
-        function changeBoxText(newText) {
-          box.text(newText);
+        function changeBoxText(0) {
+          box.text(o);
         }
 
         //////////////////////////////////////////////////////////////////
@@ -69,7 +69,7 @@
         //////////////////////////////////////////////////////////////////
 
         // TODO 2 - Variable declarations
-
+var positionX = 0
 
 
 
@@ -80,7 +80,7 @@
          * If the box drifts off the screen, turn it around!
          */
         function update() {
-
+positionX = positionX + 10;
         
 
           
@@ -93,7 +93,7 @@
          * - increase the speed
          * - move the box to the left side of the screen.
          */
-        function handleBoxClick() {
+        function handleBoxClick(positionX = 0) {
 
 
 
